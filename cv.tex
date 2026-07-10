@@ -1,0 +1,113 @@
+%==============================================================================
+%  Shahriar Ahmed Seam — CV
+%  Compile:  latexmk -pdf cv.tex     (or: pdflatex cv.tex)
+%==============================================================================
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% Computer Modern (lmodern) — same typeface as Abrar's CV
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[left=0.65in,right=0.65in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% PDF metadata
+\hypersetup{
+  pdftitle={Shahriar Ahmed Seam - CV},
+  pdfauthor={Shahriar Ahmed Seam},
+  pdfsubject={AI/ML Engineer},
+  pdfkeywords={Machine Learning, LLM, RAG, Agentic AI, MLOps, Full Stack, Python, C++}
+}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+% Section headings: Small Caps + hrule (Abrar's style)
+\titleformat{\section}{\large\scshape}{}{0em}{}[\vspace{1pt}\hrule\vspace{1pt}]
+\titlespacing*{\section}{0pt}{3pt}{2pt}
+
+% Compact bullet list
+\newlist{tight}{itemize}{1}
+\setlist[tight]{leftmargin=1.4em,label=\textbullet,itemsep=0pt,topsep=1pt,parsep=0pt}
+
+\begin{document}
+
+%------------------------------------------------------------------ HEADER
+\begin{center}
+    {\Large \textbf{Shahriar Ahmed Seam}}\\[4pt]
+    \small
+    \href{mailto:shahriarseam17@gmail.com}{shahriarseam17@gmail.com} \ | \
+    \href{https://www.linkedin.com/in/shahriar-ahmed-seam/}{LinkedIn} \ | \
+    \href{https://github.com/shahriar-ahmed-seam}{Github} \ | \
+    {+880 1700-942829}
+\end{center}
+
+%------------------------------------------------------------------ SUMMARY
+\section{Summary}
+I am a Computer Science and Engineering student at BUET and an AI/ML engineer working across the
+modern AI stack, from LLMs, RAG, and agentic systems to generative AI, NLP, computer vision, and
+diffusion models. Alongside this, I research and fine-tune LLMs and turn them into production-grade
+systems built on fault-tolerant microservices and solid backend, full-stack, and DevOps engineering.
+To me, AI should be a core, observable part of production infrastructure, not just an add-on.
+
+%------------------------------------------------------------------ EDUCATION
+\section{Education}
+
+\textbf{Bangladesh University of Engineering and Technology (BUET)}\hfill\textit{Expected December 2027}\\[1pt]
+Bachelor of Science in Computer Science \& Engineering\par\vspace{3pt}
+
+\textbf{Notre Dame College}\hfill\textit{June 2020}\\[1pt]
+Higher Secondary Certificate, Science\par\vspace{1pt}
+
+%------------------------------------------------------------------ EXPERIENCE
+\section{Experience}
+
+\textbf{Somokolon Labs}\hfill \textit{January 2026 -- Present}\\[1pt]
+\textit{Founder \& AI/ML Engineer}\hfill\href{https://somokolonlabs.com}{somokolonlabs.com}
+\begin{tight}
+    \item Founded and run an AI and software studio that ships LLM, RAG, generative-AI, and full-stack products end to end.
+    \item Delivered production point-of-sale (POS) software for small retail businesses, from requirements gathering through deployment.
+    \item Own the full lifecycle: research, engineering, CI/CD, cloud deployment, and monitoring across the studio's shared infrastructure.
+\end{tight}\vspace{2pt}
+
+%------------------------------------------------------------------ PROJECTS
+\section{Projects}
+
+\begin{tight}
+    \item \textbf{Nexus Agent Orchestrator} (\textbf{LangGraph} + \textbf{FastAPI} + \textbf{Next.js} + \textbf{pgvector}): Multi-agent platform (plan $\rightarrow$ research $\rightarrow$ code $\rightarrow$ critique) with RAG over documents; runs fully offline with local models.
+    \item \textbf{Vector Vault DB} (\textbf{C++17} + \textbf{AVX-512} + \textbf{pybind11}): Vector database built from scratch with HNSW/IVF indexes and AVX-512 distance kernels; Python bindings for search over millions of vectors.
+    \item \textbf{ResoNet} (\textbf{ONNX} + \textbf{ResNet} + \textbf{Dart} + \textbf{Edge AI}): On-device respiratory screening from cough audio; reimplemented preprocessing and ResNet18 in pure Dart, cutting the app from 600\,MB+ to $\sim$70\,MB with no accuracy loss.
+    \item \textbf{HillTrack Pulse} (\textbf{DBSCAN} + \textbf{FastAPI} + \textbf{Ollama} + \textbf{Gemini}): Offline-first outbreak-detection and medical-consultation system for low-connectivity rural regions of Bangladesh.
+\end{tight}\vspace{2pt}
+
+%------------------------------------------------------------------ SKILLS
+\section{Programming Skills}
+
+\begin{tight}
+    \item \textbf{Languages}: Python, C++, TypeScript/JavaScript, Go, Java, SQL
+    \item \textbf{AI/ML}: PyTorch, LLMs \& RAG, Agentic AI (LangGraph, LangChain), Generative AI, NLP, Computer Vision, Diffusion Models, Hugging Face, ONNX
+    \item \textbf{Backend \& Full Stack}: FastAPI, Node.js/Express, Spring Boot, React, Next.js, PostgreSQL, Redis
+    \item \textbf{DevOps \& MLOps}: Docker, Kubernetes, Kafka, CI/CD (GitHub Actions), AWS, Ollama, Git
+\end{tight}\vspace{2pt}
+
+%------------------------------------------------------------------ LEADERSHIP
+\section{Leadership \& Organizational Experience}
+
+\textbf{Secretary} (LWS), Notre Dame Science Club\hfill\textit{May 2020 -- May 2021}\par
+\textbf{Member}, BUET Robotics Club\par
+\textbf{Volunteer}, Quantum Foundation Blood Donation Program\vspace{2pt}
+
+%------------------------------------------------------------------ AWARDS
+\section{Awards \& Achievements}
+
+\begin{tight}
+    \item \textbf{Top 5 Finalist}, Future Builders 2025 (AI-Driven Cognitive Innovation Hackathon) --- built \textit{HillTrack Pulse}, an offline-first healthcare platform for rural Bangladesh.
+    \item \textbf{Finalist (Top 28 Teams, MarTech \& Branding)}, INFINITE AI Builders --- built \textit{AIgnis}, an AI-driven autonomous marketing-campaign system.
+    \item \textbf{Finalist}, BUET CSE Fest Hackathon --- built \textit{OrionStream ML}, an event-driven ML inference platform.
+    \item \textbf{Regional Champion}, Bangladesh Physics Olympiad; National Participant, Physics \& Astronomy Olympiads
+\end{tight}
+
+\end{document}
